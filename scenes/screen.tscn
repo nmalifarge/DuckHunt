@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbxq15ajeebl1"]
+
+[ext_resource type="Script" path="res://scenes/screen.gd" id="1_6vh2g"]
+[ext_resource type="PackedScene" uid="uid://08avp2ufndb7" path="res://scenes/bird.tscn" id="1_pquvj"]
+[ext_resource type="Texture2D" uid="uid://8a6lm8idybut" path="res://assets/3DS - WarioWare Gold - Duck Hunt.png" id="2_1e7to"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eto1d"]
+size = Vector2(1152, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1yu1p"]
+size = Vector2(1147.5, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ny0bx"]
+size = Vector2(100, 471)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5i1i"]
+size = Vector2(100, 466)
+
+[node name="screen" type="Node2D"]
+script = ExtResource("1_6vh2g")
+bird_node = ExtResource("1_pquvj")
+
+[node name="walls" type="StaticBody2D" parent="."]
+
+[node name="top" type="CollisionShape2D" parent="walls"]
+position = Vector2(577, -32)
+shape = SubResource("RectangleShape2D_eto1d")
+
+[node name="bottom" type="CollisionShape2D" parent="walls"]
+position = Vector2(573.75, 494)
+shape = SubResource("RectangleShape2D_1yu1p")
+
+[node name="right" type="CollisionShape2D" parent="walls"]
+position = Vector2(1199, 237)
+shape = SubResource("RectangleShape2D_ny0bx")
+
+[node name="left" type="CollisionShape2D" parent="walls"]
+position = Vector2(-49, 234)
+shape = SubResource("RectangleShape2D_l5i1i")
+
+[node name="Foreground" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(575.875, 555.224)
+scale = Vector2(2.25, 2.12835)
+texture = ExtResource("2_1e7to")
+region_enabled = true
+region_rect = Rect2(0.684223, 154.925, 511.619, 90.233)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(575, 233)
+scale = Vector2(2.24658, 3.33333)
+texture = ExtResource("2_1e7to")
+region_enabled = true
+region_rect = Rect2(0.330322, 18.6172, 511.978, 138.296)
