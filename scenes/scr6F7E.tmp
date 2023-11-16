@@ -19,6 +19,7 @@ size = Vector2(100, 466)
 
 [node name="screen" type="Node2D"]
 script = ExtResource("1_6vh2g")
+bird_node = ExtResource("1_pquvj")
 
 [node name="walls" type="StaticBody2D" parent="."]
 
@@ -55,5 +56,3 @@ region_enabled = true
 region_rect = Rect2(0.330322, 18.6172, 511.978, 138.296)
 
 [node name="blue_bird" parent="." instance=ExtResource("4_c423o")]
-
-[node name="bird" parent="." instance=ExtResource("1_pquvj")]

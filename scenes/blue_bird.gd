@@ -1,8 +1,8 @@
 extends CharacterBody2D
-class_name bird
+class_name blue_bird
 
-@onready var animatedSprite = $AnimatedSprite2D_brown
-@onready var animatedPlayer = $AnimationPlayer_brown
+@onready var animatedSprite = $AnimatedSprite2D_blue
+@onready var animatedPlayer = $AnimationPlayer_blue
 var speed: float = 300
 signal exit
 

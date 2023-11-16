@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://08avp2ufndb7"]
+[gd_scene load_steps=13 format=3 uid="uid://08avp2ufndb7"]
 
 [ext_resource type="Texture2D" uid="uid://8a6lm8idybut" path="res://assets/3DS - WarioWare Gold - Duck Hunt.png" id="1_v3lx8"]
 [ext_resource type="Script" path="res://scenes/bird.gd" id="1_xf8hc"]
@@ -53,86 +53,6 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vt87a"]
 radius = 18.6696
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pvhxs"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(256, 320, 64, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lrmrj"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(320, 320, 64, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2842d"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(192, 289, 64, 31)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_62pjt"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(256, 289, 64, 31)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j1pgd"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(320, 289, 64, 31)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_t5lby"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pvhxs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lrmrj")
-}],
-"loop": false,
-"name": &"death",
-"speed": 2.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2842d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_62pjt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j1pgd")
-}],
-"loop": true,
-"name": &"fly",
-"speed": 5.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_y77bp"]
-radius = 18.0031
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_06mgu"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(0, 257, 64, 31)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8dlxd"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(64, 257, 64, 31)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mal6a"]
-atlas = ExtResource("1_v3lx8")
-region = Rect2(128, 257, 64, 31)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_lguch"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_06mgu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8dlxd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mal6a")
-}],
-"loop": true,
-"name": &"fly",
-"speed": 5.0
-}]
 
 [sub_resource type="Animation" id="Animation_6v0tp"]
 length = 0.001
@@ -244,38 +164,6 @@ frame = 1
 position = Vector2(0, 6)
 scale = Vector2(3, 3)
 shape = SubResource("CircleShape2D_vt87a")
-
-[node name="AnimatedSprite2D_blue" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(379, 6)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_t5lby")
-animation = &"death"
-autoplay = "fly"
-
-[node name="CollisionShape2D_blue" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(379, 10)
-scale = Vector2(3, 3)
-shape = SubResource("CircleShape2D_y77bp")
-disabled = true
-
-[node name="AnimatedSprite2D_black" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(-368, 10)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_lguch")
-animation = &"fly"
-autoplay = "fly"
-frame = 2
-frame_progress = 0.261612
-
-[node name="CollisionShape2D_black" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(-365, 15)
-scale = Vector2(3, 3)
-shape = SubResource("CircleShape2D_vt87a")
-disabled = true
 
 [node name="AnimationPlayer_brown" type="AnimationPlayer" parent="."]
 libraries = {

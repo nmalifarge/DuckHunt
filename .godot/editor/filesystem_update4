@@ -1,5 +1,6 @@
 res://scenes/screen.tscn
-res://scenes/bird.tscn
 res://scenes/bird.gd
-res://scenes/screen.gd
+res://scenes/bird.tscn
 res://scenes/blue_bird.tscn
+res://scenes/blue_bird.gd
+res://scenes/screen.gd
