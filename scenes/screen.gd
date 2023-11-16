@@ -9,7 +9,7 @@ func _ready():
 
 func _spawn_bird():
 	bird = bird_node.instantiate()
-	bird.next.connect(_ready)
+	bird.exit.connect(_ready)
 	get_tree().current_scene.add_child(bird)
 
 
