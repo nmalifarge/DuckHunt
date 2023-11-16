@@ -1,15 +1,15 @@
 extends CharacterBody2D
 
-@onready var animatedSprite = $AnimatedSprite2D
-@onready var animatedPlayer = $AnimationPlayer
-var speed: float = 200
-
+@onready var animatedSprite = $AnimatedSprite2D_brown
+@onready var animatedPlayer = $AnimationPlayer_brown
+var speed: float = 300
 signal next
 
 func _random_direction():
 	var x = deg_to_rad(randf_range(0,180))
 	return Vector2(cos(x),sin(x)).normalized()
 
+# Called when the node enters the scene tree for the first time.
 func _ready():
 	input_pickable = true
 	velocity = _random_direction() * speed
@@ -37,7 +37,6 @@ func _death():
 func _on_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("shoot"):
 		_death()
-
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	next.emit()

@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700089532
+::res://::1700164845
 icon.svg::CompressedTexture2D::2541848468181640197::1700075981::1700075985::1::::<><>::
-README.md::TextFile::-1::1700089355::0::1::::<><>::
-::res://assets/::1700089117
+README.md::TextFile::-1::1700090900::0::1::::<><>::
+::res://assets/::1700090934
 3DS - WarioWare Gold - Duck Hunt.png::CompressedTexture2D::2318134392190967919::1700076020::1700076160::1::::<><>::
 Blue Mouse Cursor-1.png.png::CompressedTexture2D::4290729113198581291::1674483198::1700086499::1::::<><>::
 Red Mouse Cursor-1.png.png::CompressedTexture2D::5347610821044351737::1674483211::1700086499::1::::<><>::
@@ -11,8 +11,9 @@ sp2.jpg::CompressedTexture2D::5910237059684293245::1700078588::1700078632::1::::
 target.png::CompressedTexture2D::3217586417705007588::1700085772::1700085776::1::::<><>::
 White Mouse Cursor-1.png.png::CompressedTexture2D::1283444165261513974::1674483220::1700086499::1::::<><>::
 Yellow Mouse Cursor-1.png.png::CompressedTexture2D::8360043445568215736::1674483179::1700086499::1::::<><>::
-::res://scenes/::1700089117
-bird.gd::GDScript::-1::1700088019::0::1::::<>CharacterBody2D<>::
-bird.tscn::PackedScene::1822883888982661062::1700088983::0::1::::<><>::uid://8a6lm8idybut::::res://assets/3DS - WarioWare Gold - Duck Hunt.png<>res://scenes/bird.gd
-screen.gd::GDScript::-1::1700089009::0::1::::<>Node2D<>::
-screen.tscn::PackedScene::2505109694315226260::1700089009::0::1::::<><>::res://scenes/screen.gd<>uid://08avp2ufndb7::::res://scenes/bird.tscn<>uid://8a6lm8idybut::::res://assets/3DS - WarioWare Gold - Duck Hunt.png
+::res://scenes/::1700169379
+bird.gd::GDScript::-1::1700169318::0::1::::<>CharacterBody2D<>::
+bird.tscn::PackedScene::1822883888982661062::1700169328::0::1::::<><>::uid://8a6lm8idybut::::res://assets/3DS - WarioWare Gold - Duck Hunt.png<>res://scenes/bird.gd
+blue_bird.tscn::PackedScene::1436639092214453365::1700169523::0::1::::<><>::res://scenes/bird.gd<>uid://8a6lm8idybut::::res://assets/3DS - WarioWare Gold - Duck Hunt.png
+screen.gd::GDScript::-1::1700169207::0::1::::<>Node2D<>::
+screen.tscn::PackedScene::2505109694315226260::1700169207::0::1::::<><>::res://scenes/screen.gd<>uid://08avp2ufndb7::::res://scenes/bird.tscn<>uid://8a6lm8idybut::::res://assets/3DS - WarioWare Gold - Duck Hunt.png
